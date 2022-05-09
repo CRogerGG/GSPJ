@@ -1,0 +1,102 @@
+<!-- Modal Form Editar Usuario -->
+<div class="modal fade" id="modal-formEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+       <div class="modal-body p-0">
+         <div class="card card-plain">
+          <div class="card-header pb-0 text-left">
+            <h5 class="">Editar Cliente</h5>
+            <p class="mb-0">Ingrese los datos correspondientes</p>
+          </div>
+          <div class="card-body">
+            <form action="/editarCliente" method="POST" role="form" class="text-start">
+              <input name="id_editar" id="id_editar" type="text" hidden>
+              <div class="input-group input-group-outline mb-3">
+                <label class="form-label">Nombre*</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" required>
+              </div>
+              <div class="d-flex align-items-center">
+              <div class="input-group input-group-outline mb-3"> <!-- my-3 margen superior mb-3 margen inferior -->
+                <label class="form-label">Apellido paterno*</label>
+                <input type="text" class="form-control" name="apaterno" id="apaterno" required>
+              </div>
+              &nbsp;&nbsp;
+              <div class="input-group input-group-outline mb-3">
+                <label class="form-label">Apellido materno*</label>
+                <input type="text" class="form-control" name="amaterno" id="amaterno" required>
+              </div>
+              </div>
+              <div class="input-group input-group-outline mb-3">
+                <label class="form-label">Domicilio*</label>
+                <input type="text" class="form-control" name="domicilio" id="domicilio" required>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="input-group input-group-outline mb-2"> <!-- my-3 margen superior mb-3 margen inferior -->
+                  <label class="form-label">Ciudad*</label>
+                  <input type="text" class="form-control" name="ciudad" id="ciudad" required>
+                </div>
+                &nbsp;&nbsp;
+                <div class="input-group input-group-outline mb-2">
+                  <label class="form-label">Estado*</label>
+                  <input type="text" class="form-control" name="estado" id="estado" required>
+                </div>
+                </div>
+
+                <label class="form-label mb-0">Fecha de nacimiento*</label>
+
+                <div class="d-flex align-items-center">
+                  <div class="input-group input-group-outline mb-3"> <!-- my-3 margen superior mb-3 margen inferior -->
+                    <label class="form-label"></label>
+                    <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                  </div>
+                  &nbsp;&nbsp;
+                  <div class="input-group input-group-outline mb-3">
+                    <label class="form-label">CURP</label>
+                    <input type="text" class="form-control" name="curp" id="curp">
+                  </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="input-group input-group-outline mb-3"> <!-- my-3 margen superior mb-3 margen inferior -->
+                      <label class="form-label">Teléfono fijo</label>
+                      <input type="text" class="form-control" name="tel_fijo" id="tel_fijo">
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="input-group input-group-outline mb-3">
+                      <label class="form-label">Teléfono celular</label>
+                      <input type="text" class="form-control" name="tel_celular" id="tel_celular">
+                    </div>
+                    </div>
+              <div class="input-group input-group-outline mb-3"> <!-- my-3 margen superior mb-3 margen inferior -->
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email">
+              </div>
+              <div class="input-group input-group-outline mb-3"> <!-- my-3 margen superior mb-3 margen inferior -->
+                <label class="form-label">Nacionalidad</label>
+                <input type="text" class="form-control" name="nacionalidad" id="nacionalidad">
+              </div>
+              <!-- <div class="form-check form-switch d-flex align-items-center mb-3">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember me</label>
+              </div> -->
+              <!-- <div class="text-center">
+                <button type="button" class="btn bg-gradient-primary w-100 my-4 mb-2">Sign in</button>
+              </div> -->
+<!--               <button type="submit" class="btn btn-primary">Registrar</button>
+ -->            
+          </div>
+           <!-- <div class="card-footer text-center pt-0 px-lg-2 px-1">
+            <p class="mb-4 text-sm mx-auto">
+              Don't have an account?
+              <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Sign up</a>
+            </p>
+          </div> -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary"><i class="material-icons text-sm">save</i>&nbsp;&nbsp;Registrar</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

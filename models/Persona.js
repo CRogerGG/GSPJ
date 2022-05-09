@@ -1,0 +1,59 @@
+module.exports = (sequelize, type) => {
+    return sequelize.define('persona',{
+        id_persona:{
+            type:type.INTEGER(10),
+            allowNull:false,
+            primaryKey:true,
+            autoIncrement:true
+        },
+        nombre:{
+            type:type.STRING,
+            allowNull:false
+        },
+        apaterno:{
+            type:type.STRING,
+            allowNull:false
+        },
+        amaterno:{
+            type:type.STRING,
+            allowNull:false
+        },
+        domicilio:{
+            type:type.STRING,
+            allowNull:false
+        },
+        ciudad:{
+            type:type.STRING,
+            allowNull:false
+        },
+        estado:{
+            type:type.STRING,
+            allowNull:false
+        },
+        fecha_nacimiento:{
+            type:type.DATEONLY,
+            allowNull:false
+        },
+        tel_fijo:{
+            type:type.STRING,
+            allowNull:true
+        },
+        tel_celular:{
+            type:type.STRING,
+            allowNull:true
+        },
+        email:{
+            type:type.STRING,
+            allowNull:true
+        },
+        curp:{
+            type:type.STRING,
+            allowNull:true
+        },
+        nacionalidad:{
+            type:type.STRING,
+            allowNull:true
+        }
+
+})
+}
